@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.bee9d5ff.js",
-    "static/js/787.c53e5204.chunk.js": "/static/js/787.c53e5204.chunk.js",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.bee9d5ff.js.map": "/static/js/main.bee9d5ff.js.map",
-    "787.c53e5204.chunk.js.map": "/static/js/787.c53e5204.chunk.js.map"
+    "main.css": "/blackkong8/recorder/static/css/main.073c9b0a.css",
+    "main.js": "/blackkong8/recorder/static/js/main.098e881a.js",
+    "static/js/787.c53e5204.chunk.js": "/blackkong8/recorder/static/js/787.c53e5204.chunk.js",
+    "index.html": "/blackkong8/recorder/index.html",
+    "main.073c9b0a.css.map": "/blackkong8/recorder/static/css/main.073c9b0a.css.map",
+    "main.098e881a.js.map": "/blackkong8/recorder/static/js/main.098e881a.js.map",
+    "787.c53e5204.chunk.js.map": "/blackkong8/recorder/static/js/787.c53e5204.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.bee9d5ff.js"
+    "static/js/main.098e881a.js"
   ]
 }
