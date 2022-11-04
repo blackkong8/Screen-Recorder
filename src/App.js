@@ -2,11 +2,24 @@ import './App.css';
 
 import RecordBtn from './icon/RecordBtn';
 
-import React, { useState } from 'react';
+import Clock from './Clock';
+
+import React, { useState, useEffect } from 'react';
 import { startRecording, stopRecording } from './scripts/recorder'
 
 function App() {
   const [isRecording, setRecordState] = useState(false);
+
+  const [time, setTime] = React.useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setTime(prevTime => prevTime + 1); // <-- Change this line!
+    }, 1000);
+    return () => {
+      window.clearInterval(timer);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -17,6 +30,7 @@ function App() {
               stopRecording();
               setRecordState(false);
             } else if (await startRecording()) {
+              setTime(0);
               setRecordState(true);
             }
           }}
@@ -26,7 +40,11 @@ function App() {
           }}
         />
         <p>
-          {isRecording ? "Stop" : "Start Recording"}
+          {
+            isRecording ?
+              <Clock time={time} /> :
+              "Start Recording"
+          }
         </p>
       </header>
     </div>
